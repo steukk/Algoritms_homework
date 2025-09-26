@@ -1,4 +1,4 @@
-#Пример двоичной кучи на Python:
+#Пример бинарой кучи на Python:
 import heapq
 heap = []
 heapq.heappush(heap, 3)
