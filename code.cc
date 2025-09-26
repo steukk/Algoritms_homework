@@ -1,4 +1,4 @@
-//пример двоичной кучи на с++
+//пример бинарной кучи на с++
 #include <iostream>
 #include <vector>
 #include <algorithm>
