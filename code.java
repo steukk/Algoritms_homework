@@ -1,28 +1,28 @@
-import java.util.*;
+//Пример бинарной кучи на java
+
+import java.util.PriorityQueue;
+
 public class Main {
     public static void main(String[] args) {
-        List<Object> m = new Arraylist<>(); // список, содержащий разные типы данных
-        m.add(1); // int-целое число
-        m.add(3.21); // double-число с плавающей точкой
-        m.add("Привет!"); // String-строка
-        m.add(true); // boolean-логический тип
-        m.add(Arrays.asList(7, 8, 9)); // List<Integer>-список, изменяемая последовательность
-        m.add(new int[]{7, 8, 9}); // int[]-массив, аналог кортежа, но изменемый
-        m.add(new HashSet<>(Arrays.asList))); // Set<Integer>-множество эдементов, неупорядоченное
+        PriorityQueue<Integer> heap = new PriorityQueue<>(); // min-куча
+        heap.add(3);
+        heap.add(1);
+        heap.add(2);
+        System.out.println(heap.poll());  // Выведет 1 (минимум)
+    }
+}
 
 
 
-        
-import java.util.Stack;
+//пример hash таблицы на java
+
+import java.util.HashMap;
+
 public class Main {
     public static void main(String[] args) {
-        // создаём список, используемый как стек
-        Stack<Character> stack = new Stack<>(); //создание стек символов
-
-        m.push('a');  // добавляем 'a' в стек
-        m.push('b');  // добавляем 'b' в стек
-        m.push('c');  // добавляем 'c' в стек
-
-        System.out.println(m); // выводим стек
+        HashMap<String, Integer> map = new HashMap<>();
+        map.put("one", 1);
+        map.put("two", 2);
+        System.out.println(map.get("one"));  // Выведет 1
     }
 }
