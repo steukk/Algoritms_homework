@@ -13,6 +13,22 @@ int main() {
     return 0;
 }
 
+//пример биноминальной кучи
+struct BinomialNode {
+    int key;
+    std::vector<BinomialNode*> children;
+    BinomialNode(int k) : key(k) {}
+};
+BinomialNode* n = new BinomialNode(5);
+
+//Фибоначчиева куча
+struct FibNode {
+    int key;
+    std::vector<FibNode*> children;
+    FibNode(int k) : key(k) {}
+};
+FibNode* node = new FibNode(7);
+
 
 //Пример hash таблицы
 #include <iostream>
